@@ -31,14 +31,18 @@ def get_first_close(prices):
 def get_last_close(prices):
     return prices[-1]["close"]
 
-def display_market_summary(asset, prices, show_currency=True):
-    print("Observation :", len(prices))
-    if show_currency :
-        print("First close :", get_first_close(prices), asset["currency"])
-        print("Last close :", get_last_close(prices), asset["currency"])
-    else :
-        print("First close :", get_first_close(prices))
-        print("Last close :", get_last_close(prices))
+def display_market_summary(asset, prices,show_currency=True):
+    prices = filter_prices(prices, asset["ticker"])
+    print(f"{asset['ticker']} - {asset['name']}")
+    print(f"Observations : {len(prices)}")
+    
+    if show_currency:
+        print(f"First price: {get_first_close(prices)} {asset['currency']}")
+        print(f"Last price: {get_last_close(prices)} {asset['currency']}")
+    else:
+        print(f"First price: {get_first_close(prices)}")
+        print(f"Last price: {get_last_close(prices)}")
+    print()
 
 def main():
     instruments = load_instruments()
@@ -56,26 +60,14 @@ def main():
 
     print("=== MarketPulse ===")
     print()
-    print("Instrument")
-    print(f"{instrument['ticker']} - {instrument['name']}")
-    print(f"Last price: {instrument_latest['close']} {instrument['currency']}")
-    
-    display_market_summary(instrument,instrument_prices)
-
-    print()
-
-    print("Benchmark")
-    print(f"{benchmark['ticker']} - {benchmark['name']}")
-    print(f"Last level: {benchmark_latest['close']}")
-    display_market_summary(benchmark,benchmark_prices,show_currency=False)
-
-    print()
+    print("Market Configuration")
     print(f"Period: {LOOKBACK_LABEL}")
     print(f"Interval: {INTERVAL_LABEL}")
     print()
-    print("Observations")
-    print(f"{instrument['ticker']}: {len(instrument_prices)}")
-    print(f"{benchmark['ticker']}: {len(benchmark_prices)}")
+    print("Instrument")
+    display_market_summary(instrument, prices)
+    print("Benchmark")
+    display_market_summary(benchmark, prices, False)
 
 
 if __name__ == "__main__":
