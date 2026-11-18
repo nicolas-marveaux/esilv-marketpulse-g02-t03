@@ -1,0 +1,120 @@
+    1  pwd
+    2  ls
+    3  pwd && ls
+    4  cd data
+    5  cd .
+    6  cd ..
+    7  cd data 
+    8  ls
+    9  cd sample
+   10  ls
+   11  cd ..
+   12  cd data/sample
+   13  cd 
+   14  cd..
+   15  cd data/sample
+   16  ls
+   17  pwd
+   18  ls
+   19  cd /workspaces/esilv-marketpulse-g02-t03/data/sample
+   20  cd ~
+   21  cd /workspaces/esilv-marketpulse-g02-t03/data/sample
+   22  cd ..
+   23  cd ../..
+   24  ls
+   25  cd esilv-marketpulse-g02-t03
+   26  clear
+   27  ls
+   28  cd README.md
+   29  read README.md
+   30  -l
+   31  ls -la
+   32  pwd
+   33  ls
+   34  ls -l
+   35  ls -a
+   36  ls -la
+   37  cd data
+   38  cd sample
+   39  ls
+   40  cd instruments.json
+   41  cat instruments.json
+   42  grep AAPL
+   43  git fetch origin
+   44  git status
+   45  git branch
+   46  gti remote -v
+   47  git remote -v
+   48  git rev-parse
+   49  git rev-parse HEAD
+   50  git rev-parse origin/main
+   51  git switch main,
+   52  git switch main
+   53  python src/main.py
+   54  git branch
+   55  git switch Branche_Nicolas
+   56  git branch -m nicolas-marveaux
+   57  git branch --show-current
+   58  git push -u origin nicolas-marveaux
+   59  git switch main
+   60  git branch
+   61  git switch -c demo/merge-conflict
+   62  python src/main.py
+   63  git diff
+   64  git status
+   65  git add src/main.py
+   66  git commit -m "feat : include ticker in price display"
+   67  switch main
+   68  git switch main
+   69  git switch -c demo/price-display
+   70  diff
+   71  fit diff
+   72  git diff
+   73* git switch demo/merg
+   74  git diff
+   75  git merge demo/price-display
+   76  git branch
+   77  git diff demo/price-display
+   78  git merge demo/price-display
+   79  git switch demo/price-display
+   80  git switch demo/merge-conflict
+   81  git switch demo/price-display
+   82  git merge  demo/merge-conflict
+   83  git switch demo/price-display
+   84  git diff
+   85  switch main
+   86  git switch demo/merge-conflict
+   87  git merge demo/price-display
+   88  git diff --check
+   89  git diff
+   90  switch main
+   91  git switch main
+   92  git commit -m "feat: correction"
+   93  git status
+   94  git add
+   95  git add src/main.py
+   96  git push
+   97  git status
+   98  git commit -m "merge: resolve price display conflicts"
+   99  git status
+  100  git log --oneline --graph --decorate --all
+  101  git switch main
+  102  git -d demo/merge-conflict
+  103  git branch
+  104  git branch -d demo/merge-conflict
+  105  git branch
+  106  git branch -D demo/merge-conflict
+  107  git branch -D demo/price-display
+  108  git branch
+  109  git status
+  110  git diff
+  111  git status
+  112  git switch nicolas-marveaux
+  113  python src/main.py
+  114  git diff
+  115  git commit -m "feat: improve"
+  116  git add.
+  117  git add src/main.py
+  118  git commit -m "feat: improve"
+  119  history > historique_nicolas_marveaux
+  120  history > historique_nicolas_marveaux.txt
