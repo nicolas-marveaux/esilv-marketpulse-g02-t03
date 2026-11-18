@@ -66,9 +66,11 @@ def main():
     print()
     print("Instrument")
     display_market_summary(instrument, prices)
+    print(f"Market : {instrument['market']}")
+    print()
     print("Benchmark")
     display_market_summary(benchmark, prices, False)
-
+    print(f"Market : {benchmark['market']}")
 
 if __name__ == "__main__":
     main()
