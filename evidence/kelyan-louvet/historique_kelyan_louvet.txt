@@ -1,0 +1,63 @@
+    1  git fetch
+    2  git switch main
+    3  git status
+    4  python src/main.py
+    5  git switch -c feature/display-observation-dates
+    6  git branch
+    7  head -2 data/sample/prices.csv
+    8  git branch -d feature/display-observation-dates
+    9  git switch main
+   10  git branch -d feature/display-observation-dates
+   11  git switch Branche-Kelyan
+   12  git merge main
+   13  git status
+   14  git branch
+   15  git log --oneline --graph --decorate --all
+   16  git diff main..Branche-Kelyan
+   17  git switch main
+   18  git log --oneline --graph --decorate --all
+   19  python src/main.py
+   20  git merge Branche-Kelyan
+   21  git switch Branche-Kelyan
+   22  git branch --merged
+   23  git switch main
+   24  git remote v
+   25  git remote -v
+   26  git fetch origin
+   27  git reset --hard origin/main
+   28  git status
+   29  git rev-parse HEAD
+   30  git rev-parse origin/main
+   31  python src/main.py
+   32  git switch main
+   33  git status
+   34  git switch -c kelyan-louvet
+   35  git branch --show-current
+   36  git push -u origin 
+   37  git push -u origin kelyan-louvet
+   38  git switch main
+   39  git switch -c demo/merge-conflict
+   40  git branch --show-current
+   41  git src/main.py
+   42  git add src/main.py
+   43  git commit -m "demo: change line on demo branch"
+   44  git switch demo/merge-conflict
+   45  git diff
+   46  git diff --check
+   47  git switch main
+   48  git branch
+   49  git branch -d demo/merge-conflict
+   50  git branch -D  demo/merge-conflict
+   51  git branch -a
+   52  git switch
+   53  git switch main
+   54  git branch --show-current
+   55  git switch kelyan-louvet
+   56  git branch --show-current
+   57  git status
+   58  python src/main.py
+   59  git diff
+   60  git add src/main.py
+   61  git commit -m "feat: add Kelyan line"
+   62  git push
+   63  history > historique_kelyan_louvet.txt
