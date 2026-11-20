@@ -186,6 +186,66 @@ calculate once
 present many times
 ```
 
+## How to run the project
+
+### Prerequisites
+
+- Python 3 installed (check with `python --version` or `python3 --version`)
+- Git installed
+
+### 1. Clone the repository and switch to this branch
+
+```bash
+git clone https://github.com/nicolas-marveaux/esilv-marketpulse-g02-t03.git
+cd esilv-marketpulse-g02-t03
+git switch Branche-Baptiste
+```
+
+### 2. Install dependencies
+
+At this stage, MarketPulse only uses the Python standard library, so `requirements.txt` contains no package yet. The command below is harmless now and becomes necessary in later labs:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+### 3. Run MarketPulse
+
+Run the command **from the repository root**, because the data path `data/sample` is relative to the current directory:
+
+```bash
+python src/main.py
+```
+
+On some Linux systems, use `python3` instead of `python`.
+
+Expected output :
+
+```text
+=== MarketPulse ===
+
+Market Configuration
+Period: 1 month
+Interval: Daily
+
+Instrument
+AAPL - Apple Inc.
+Observations : 21
+First price: 250.00 USD
+Last price: 266.20 USD
+
+Benchmark
+SP500 - S&P 500
+Observations : 21
+First price: 6600.00
+Last price: 6742.00
+```
+
+### Troubleshooting
+
+- `FileNotFoundError: ... data/sample/instruments.json`: the command was not run from the repository root. Go back to the root folder with `cd`, then run it again.
+- `python: command not found`: use `python3` instead.
+
 ## Canonical runtime
 
 Terminal:
