@@ -54,6 +54,7 @@ def main():
     benchmark = instruments["benchmark"]
 
     print("=== MarketPulse ===")
+    print("Data source: Local CSV:")
     print()
     print("Market Configuration")
     print(f"Period: {LOOKBACK_LABEL}")
